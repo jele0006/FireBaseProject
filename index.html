@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hybrid Assignment 2</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Spectral+SC|Russo+One" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-firestore.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBNGa23J55XA1i3BnkXcDsiKkA1a2N_Vlg",
+            authDomain: "myfirstproject-74f02.firebaseapp.com",
+            databaseURL: "https://myfirstproject-74f02.firebaseio.com",
+            projectId: "myfirstproject-74f02",
+            storageBucket: "myfirstproject-74f02.appspot.com",
+            messagingSenderId: "462034475029"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <h2>STREET FIGHTER</h2>
+    
+    <div class="fighterForm" id="fighterLogo">
+        <img class="logo" src="SFLogo.jpg" alt="Street Fighter Logo">
+    </div>
+    
+    
+    <h3 id="addFighterTitle">ADD FIGHTERS</h3>
+    <div class="fighterForm" id="addFighterForm">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="name">Fighter Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Fighter Name">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="height">Height</label>
+                <input type="text" class="form-control" id="height" placeholder="Height">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="weight">Weight</label>
+                <input type="text" class="form-control" id="weight" placeholder="Weight">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="weight">Occupation</label>
+                <input type="text" class="form-control" id="occupation" placeholder="Occupation">
+            </div>
+            
+            <button class="btn btn-primary" id="addFighterBtn">Save Changes</button>
+            <button class="btn btn-primary" id="addCancelBtn">Cancel</button>
+        </div>
+    </div>
+    
+    <h3 id="editFighterTitle">EDIT FIGHTERS</h3>
+    
+    <div class="fighterForm" id="editFighterForm">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="name">Fighter Name</label>
+                <input type="text" class="form-control" id="editName" placeholder="Fighter Name">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="height">Height</label>
+                <input type="text" class="form-control" id="editHeight" placeholder="Height">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="weight">Weight</label>
+                <input type="text" class="form-control" id="editWeight" placeholder="Weight">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="weight">Occupation</label>
+                <input type="text" class="form-control" id="editOccupation" placeholder="Occupation">
+            </div>
+            
+            <button class="btn btn-primary" id="editSaveChangesBtn">Save Changes</button>
+            <button class="btn btn-primary" id="editCancelBtn">Cancel</button>
+        </div>
+    </div>
+    
+    <h3 class="newFighterH3">FIGHTER LIST<span><button id="createNewFighterBtn" style="float: right;" >Add New Fighter</button></span></h3>
+    
+    <div class="fighterList"></div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

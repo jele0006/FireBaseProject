@@ -1,0 +1,133 @@
+/*Main styling for page*/
+
+html {
+    background-image: linear-gradient(to bottom right, grey, white);
+}
+
+.name {
+    background-color:rgb(200,0,0);
+    padding: .5rem;
+    color: white;
+    text-shadow: 2px 2px black;
+    box-shadow: 2px 2px black;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+    background-color:rgb(100,100,100);
+    padding: 1rem;
+    box-shadow: 2px 2px black;
+}
+
+li {
+    color:white;
+    padding-bottom: .8rem;
+    padding-left: 1rem;
+    font-family:fantasy;
+    text-shadow: 1.5px 1.5px black;
+}
+button {
+    background-color:rgb(45,45,45);
+    color:white;
+    margin: .5rem;
+    padding: .3rem;
+    box-shadow: 1px 1px black;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+h3{
+    color:white;
+    background-color:rgb(30,30,30);
+    padding: 1rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    box-shadow: 2px 2px black;
+    overflow:hidden;
+    font-size: 1.3rem;
+}
+h2{
+    background-color:rgb(200,0,0);
+    padding: 2rem;
+    color:white;
+    text-shadow: 2px 2px black;
+    box-shadow: 2px 2px black;
+    font-family: sans-serif;
+    font-weight: 350;
+    font-size: 2rem;
+}
+.fighterForm{
+    background-color:rgb(60,60,60);
+    padding:1rem;
+    color:white;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-shadow: 2px 2px black;
+    box-shadow: 2px 2px black;
+}
+.form-group{
+    padding:1rem;
+    padding-top: 1.3rem;
+}
+input{
+    margin-left:3rem;
+    padding:.3rem;
+    box-shadow: 2px 2px black;
+}
+
+input#occupation {
+    margin-left:3.8rem;
+}
+
+input#height, #weight, #editWeight{
+    margin-left: 6.1rem;
+}
+
+input#weight{
+    margin-left: 6rem;
+}
+
+#editHeight {
+    margin-left: 6.3rem;
+}
+
+#editOccupation {
+    margin-left: 4rem;
+}
+
+#editName {
+    margin-left: 3.1rem;
+}
+img {
+    align-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.newFighterH3{
+    color:white;
+    background-color:rgb(30,30,30);
+    padding: 1rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    box-shadow: 2px 2px black;
+    overflow:hidden;
+}
+#createNewFighterBtn {
+    margin: 0rem;
+}
+
+/*Page transitions*/
+
+#editFighterForm, #editFighterTitle, #addFighterForm, #addFighterTitle {
+    display: none;
+}
+
+
